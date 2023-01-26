@@ -11,6 +11,7 @@ public class MongoDBAction
             var database = client.GetDatabase("WeatherForecast");
             
        
+            
             var collection = database.GetCollection<WeatherForecast>("WeatherData");
             collection.InsertOne(quest);
         }
